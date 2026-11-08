@@ -1,16 +1,13 @@
-# React + Vite
+# Tic-Tac-Toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Built by following the official React tutorial at https://react.dev/learn/tutorial-tic-tac-toe. All code written by me.
 
-Currently, two official plugins are available:
+Additions beyond the tutorial:
+- `Board` renders with nested `.map()` instead of hardcoded squares
+- `calculateWinner` returns `{ winner, line }`; the winning three squares are highlighted
+- Draw detection
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Run
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+npm install
+npm run dev
